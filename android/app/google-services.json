@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "670643543688",
+    "project_id": "dk-mov-course",
+    "storage_bucket": "dk-mov-course.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670643543688:android:c650ad218249b96ae0093d",
+        "android_client_info": {
+          "package_name": "com.afebrii.dk_mov"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIq-l_4RtzTe1f4PPuLQPBEsk687kP2Gc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
