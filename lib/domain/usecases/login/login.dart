@@ -7,7 +7,7 @@ import '../../entities/user.dart';
 
 part 'login_params.dart';
 
-class Login implements Usecase<Result<User>, LoginParams> {
+class Login implements UseCase<Result<User>, LoginParams> {
   final Authentication authentication;
   final UserRepository userRepository;
 
