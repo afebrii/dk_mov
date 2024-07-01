@@ -2,6 +2,7 @@ import 'package:dk_mov/data/dummies/dummy_authentication.dart';
 import 'package:dk_mov/data/dummies/dummy_user_repository.dart';
 import 'package:dk_mov/data/firebase/firebase_authentication.dart';
 import 'package:dk_mov/domain/usecases/login/login.dart';
+import 'package:dk_mov/presentation/extensions/build_context_extension.dart';
 import 'package:dk_mov/presentation/pages/main_page/main_page.dart';
 import 'package:dk_mov/presentation/providers/router/router_provider.dart';
 import 'package:dk_mov/presentation/providers/user_data/user_data_provider.dart';
@@ -21,8 +22,7 @@ class LoginPage extends ConsumerWidget {
             ref.read(routerProvider).goNamed('main');
           }
         } else if (next is AsyncError) {
-          ScaffoldMessenger.of(context)
-              .showSnackBar(SnackBar(content: Text(next.error.toString())));
+          context.showSnackBar(next.error.toString());
         }
       },
     );
