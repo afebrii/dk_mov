@@ -1,14 +1,14 @@
 import 'package:dk_mov/data/repositories/transaction_repository.dart';
 import 'package:dk_mov/domain/entities/result.dart';
 import 'package:dk_mov/domain/entities/transaction.dart';
-import 'package:dk_mov/domain/usecases/get_transaction/get_transaction_param.dart';
+import 'package:dk_mov/domain/usecases/get_transactions/get_transactions_param.dart';
 import 'package:dk_mov/domain/usecases/usecase.dart';
 
-class GetTransaction
+class GetTransactions
     implements UseCase<Result<List<Transaction>>, GetTransactionParam> {
   final TransactionRepository _transactionRepository;
 
-  GetTransaction({required TransactionRepository transactionRepository})
+  GetTransactions({required TransactionRepository transactionRepository})
       : _transactionRepository = transactionRepository;
 
   @override
